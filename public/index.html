@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DESIGN CV — Créez un CV professionnel</title>
+  <meta name="description" content="Choisissez un modèle, remplissez le formulaire rubrique par rubrique, exportez votre CV en PDF.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📄</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;600&display=swap">
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  <div id="app" class="app-shell">
+    <div class="boot">
+      <div class="boot__spinner" aria-hidden="true"></div>
+      <p>Chargement de votre espace…</p>
+    </div>
+  </div>
+  <div id="toasts" class="toasts" role="status" aria-live="polite"></div>
+
+  <!-- Visible uniquement à l'impression : imprimer l'écran ne doit pas
+       fournir une copie du CV, le PDF s'obtient par le bouton dédié. -->
+  <div id="print-notice">
+    <p class="print-notice__brand">DESIGN CV</p>
+    <p class="print-notice__title">L’impression directe de cette page est désactivée.</p>
+    <p class="print-notice__text">
+      Pour obtenir votre CV au format PDF, utilisez le bouton
+      « Télécharger le PDF » dans l’application.
+    </p>
+  </div>
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

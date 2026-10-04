@@ -1,0 +1,14 @@
+{
+  "name": "design-cv",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DESIGN CV — générateur de CV : choix du design, formulaire par rubrique, export PDF",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node --no-warnings server/index.js",
+    "dev": "node --no-warnings --watch server/index.js"
+  }
+}
